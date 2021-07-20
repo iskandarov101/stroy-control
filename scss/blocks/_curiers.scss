@@ -1,0 +1,150 @@
+.curiers {
+  text-align: center;
+  padding-bottom: 143px;
+}
+.curiers__title {
+  margin-bottom: 21px;
+  font-size: 32px;
+  line-height: 48px;
+  color: $title-color;
+}
+
+.curiers__sub-title {
+  margin: 0 auto;
+  margin-bottom: 43px;
+  max-width: 643px;
+  font-size: 20px;
+  line-height: 32px;
+  color: $text-color;
+}
+.curiers__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -13px;
+  justify-content: center;
+}
+
+.curiers-info__item {
+  text-align: left;
+  max-width: 334px;
+  margin: 0 13px 33px;
+  position: relative;
+  padding-left: 64px;
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    left: 0px;
+  }
+  &:nth-child(1)::before {
+    background-image: url(../img/c1.png);
+  }
+  &:nth-child(2)::before {
+    background-image: url(../img/c2.png);
+  }
+  &:nth-child(3)::before {
+    background-image: url(../img/c3.png);
+  }
+  &:nth-child(4)::before {
+    background-image: url(../img/c4.png);
+  }
+  &:nth-child(5)::before {
+    background-image: url(../img/c5.png);
+  }
+  &:nth-child(6)::before {
+    background-image: url(../img/c6.png);
+  }
+  &:nth-child(7)::before {
+    background-image: url(../img/c7.png);
+  }
+  &:nth-child(8)::before {
+    background-image: url(../img/c8.png);
+  }
+  &:nth-child(9)::before {
+    background-image: url(../img/c9.png);
+  }
+}
+.curiers-info__title {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 11px;
+}
+.curiers-info__text {
+  font-size: 16px;
+  line-height: 24px;
+  color: $text-color;
+}
+
+.curiers-info__sub-title {
+  font-size: 20px;
+  line-height: 32px;
+  color: $text-color;
+}
+.strong-text {
+  color: $title-color;
+  position: relative;
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 40%;
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #FFD042;
+  }
+}
+
+
+
+@include breakpoint-down (1094) {
+  .curiers-info__item {
+    max-width: 46%;
+    margin: 0 2% 33px;
+  }
+  .curiers {
+    padding-bottom: 103px;
+  }
+}
+@include breakpoint-down (768) {
+  .curiers-info__item {
+    max-width: 100%;
+    margin: 0 0 20px;
+  }
+  .curiers-info__sub-title {
+    font-size: 15px;
+    line-height: 19px;
+    color: $text-color;
+  }
+  .curiers {
+    padding-bottom: 60px;
+  }
+  .curiers__list {
+    padding: 10px 20px;
+  }
+  .curiers__title {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+  .curiers__sub-title {
+    max-width: 100%;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 20px;
+  }
+  .curiers-info__title {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 3px;
+  }
+  .curiers-info__text {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}

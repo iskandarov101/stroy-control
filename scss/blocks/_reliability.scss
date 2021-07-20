@@ -1,0 +1,124 @@
+.reliability {
+  text-align: center;
+  padding-bottom: 144px;
+}
+.reliability__title {
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 400;
+  margin-bottom: 17px;
+  position: relative;
+}
+.reliability__title::before {
+  content: "";
+  display: inline-block;
+  width: 43px;
+  height: 43px;
+  background-image: url("../img/list.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  background-size: 43px 43px;
+  left: calc( 50% + 90px);
+  top: -20px;
+}
+.reliability__sub-title {
+  font-size: 20px;
+  line-height: 32px;
+  color: $text-color;
+  max-width: 857px;
+  margin: 0 auto 48px;
+}
+.reliability__list {
+  display: flex;
+  margin: 0 -15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 62px;
+}
+.reliability__item {
+  padding-top: 67px;
+  width: 332px;
+  margin: 0 15px 30px;
+  position: relative;
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &:nth-child(1)::before {
+    background-image: url("../img/rc1.png");
+  }
+  &:nth-child(2)::before {
+    background-image: url("../img/rc2.png");
+  }
+  &:nth-child(3)::before {
+    background-image: url("../img/rc3.png");
+  }
+}
+
+.reliability-card__title {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 11px;
+}
+.reliability-card__text {
+  font-size: 16px;
+  line-height: 24px;
+  color: $text-color;
+}
+@include breakpoint-down (1096) {
+  .reliability__item {
+    width: 46%;
+    margin: 0 2% 30px;
+  }
+}
+@include breakpoint-down (768) {
+  .reliability__item {
+    width: 100%;
+    margin: 0 0 20px;
+    padding-top: 55px;
+  }
+  .reliability-card__title {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 5px;
+  }
+  .reliability-card__text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .reliability__title {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 10px;
+  }
+  .reliability__sub-title {
+    font-size: 16px;
+    line-height: 20px;
+    color: $text-color;
+    max-width: 100%;
+    margin: 0 auto 30px;
+  }
+  .reliability__title::before {
+    left: calc( 50% + 50px);
+    background-size: 30px 30px;
+    width: 30px;
+    height: 30px;
+    top: -15px;
+  }
+  .reliability__list {
+    margin-bottom: 30px;
+  }
+  .reliability {
+    padding-bottom: 70px;
+  }
+}

@@ -1,0 +1,88 @@
+.partners-logotip {
+  padding-bottom: 108px;
+}
+.partners-logotip__wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 672px;
+}
+.partners-logotip__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 -60px;
+}
+.partners-logotip__item {
+  display: flex;
+  flex-direction: column;
+  max-width: 126px;
+  margin: 0 60px 40px;
+}
+.partners-logotip__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+}
+.partners-logotip__img {
+  flex-grow: 1;
+  margin-bottom: 32px;
+  object-fit: contain;
+  object-position: center center;
+}
+.partners__img--build{
+  width: 126px;
+  height: 112px;
+}
+.partners__img--contech{
+  width: 164px;
+  height: 88px;
+  margin-bottom: 44px;
+}
+.partners__img--startup{
+  width: 162px;
+  height: 110px;
+  margin-bottom: 33px;
+}
+.partners__img--proptech{
+  width: 184px;
+  height: 112px;
+}
+.partners-logotip__text {
+  max-width: 139px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #72787D;
+}
+@media only screen and(max-width:1000px){
+  .partners-logotip {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+}
+@media only screen and(max-width:800px){
+
+  .partners-logotip__img{
+    margin-bottom: 10px;
+  }
+}
+@include breakpoint-down (838) {
+  .partners-logotip__list {
+    flex-direction: column;
+    margin: 0;
+  }
+  .partners-logotip__item {
+    margin: 0 0 30px;
+  }
+}
+@include breakpoint-down (768) {
+  .partners-logotip {
+    padding-bottom: 40px;
+  }
+  .partners-logotip__text {
+    font-size: 14px;
+  }
+}

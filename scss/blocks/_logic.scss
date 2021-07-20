@@ -1,0 +1,50 @@
+.logic {
+  text-align: center;
+  padding-bottom: 150px;
+}
+.logic__container {
+  background-image: url("../img/logic-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 117px 0;
+}
+.logic__title {
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 64px;
+  padding: 0;
+  max-width: 980px;
+  margin: 0 auto 54px;
+}
+.logic__link--dark {
+  background-color: $title-color;
+  color: #fff;
+  margin-right: 16px;
+}
+.logic__link--white {
+  background-color: #fff;
+  color: $title-color;
+}
+@include breakpoint-down (1000) {
+  .logic__title {
+    font-size: 36px;
+    line-height: 54px;
+    margin: 0 auto 34px;
+  }
+  .logic {
+    padding-bottom: 100px;
+  }
+}
+@include breakpoint-down (768) {
+  .logic__title {
+    font-size: 22px;
+    line-height: 30px;
+    margin: 0 auto 24px;
+  }
+  .logic__container {
+    padding: 70px 0;
+  }
+  .logic {
+    padding-bottom: 60px;
+  }
+}

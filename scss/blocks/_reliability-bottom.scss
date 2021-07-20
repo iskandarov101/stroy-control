@@ -1,0 +1,79 @@
+.reliability-bottom {
+  display: flex;
+  align-items: center;
+  padding: 45px 40px;
+  background-color: #F6F8F9;
+  border-radius: 5px;
+}
+.reliability-bottom__text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: $title-color;
+}
+.reliability-bottom::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background-image: url("../img/hands.svg");
+  margin-right: 25px;
+}
+.reliability-bottom__strong {
+  font-weight: 700;
+}
+.reliability-bottom__btn {
+  display: inline-block;
+  margin-left: auto;
+  padding: 13px 25px;
+  border: 1px solid #DADEDF;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 18px;
+  line-height: 24px;
+  color: $title-color;
+}
+.reliability-bottom__btn:hover {
+  color: #fff;
+  background-color: $title-color;
+}
+@include breakpoint-down (1050) {
+  .reliability-bottom {
+    flex-direction: column;
+  }
+  .reliability-bottom::before {
+    margin-right: 0;
+  }
+  .reliability-bottom::before {
+    margin-bottom: 20px;
+  }
+  .reliability-bottom__btn {
+    margin-left: 0;
+  }
+  .reliability-bottom__text {
+    margin-bottom: 20px;
+  }
+}
+@include breakpoint-down (814) {
+  .reliability-bottom__strong {
+    display: block;
+  }
+}
+@include breakpoint-down (768) {
+  .reliability-bottom__text {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+  .reliability-bottom__btn {
+    padding: 8px 15px;
+    font-size: 14px;
+  line-height: 19px;
+  }
+  .reliability-bottom {
+    padding: 10px;
+  }
+  .reliability-bottom::before {
+    margin-bottom: 10px;
+  }
+}
